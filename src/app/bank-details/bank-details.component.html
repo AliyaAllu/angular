@@ -1,0 +1,27 @@
+<form [formGroup]="bank_details" (ngSubmit)="onSubmit()">
+    <h3 class="Heading">Bank Details</h3>
+
+    <!-- Account Type -->
+    <div class="login__field">
+        <i class="login__icon fas fa-money-check-alt"></i>
+        <input type="text" class="login__input" placeholder="Account Type" formControlName="accountType">
+    </div>
+
+    <!-- Account Number -->
+    <div class="login__field">
+        <i class="login__icon fas fa-credit-card"></i>
+        <input type="text" class="login__input" placeholder="Account Number" formControlName="accountNumber">
+    </div>
+
+    <!-- IFSC Code -->
+    <div class="login__field">
+        <i class="login__icon fas fa-university"></i>
+        <input type="text" class="login__input" placeholder="IFSC Code" formControlName="ifscCode">
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="button login__submit">
+        <span class="button__text">Submit</span>
+        <i class="button__icon fas fa-chevron-right"></i>
+    </button>
+</form>
